@@ -1,26 +1,49 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: --color-neutral-950;
+  --font-dm-mono: var(--font-dm-mono);
 }
 
 @theme inline {
-  --color-background: var(--background);
+  /* --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-mono: var(--font-geist-mono); */
+
+  --color-neutral-50: #FAFAFA;
+  --color-neutral-100: #F5F5F5;
+  --color-neutral-200: #E5E5E5;
+  --color-neutral-300: #D4D4D4;
+  --color-neutral-400: #A1A1A1;
+  --color-neutral-500: #737373;
+  --color-neutral-600: #525252;
+  --color-neutral-700: #404040;
+  --color-neutral-800: #262626;
+  --color-neutral-900: #171717;
+  --color-neutral-950: #0A0A0A;
+
+  --color-red-50: #FF8485;
+  --color-red-100: #FE6B6C;
+  --color-red-200: #FE5253;
+  --color-red-300: #FE393B;
+  --color-red-400: #FE2022;
+  --color-red-500: #FE080A;
+  --color-red-600: #E50709;
+  --color-red-700: #CB0608;
+  --color-red-800: #B20607;
+  --color-red-900: #980506;
+  --color-red-950: #7F0405;
+
+  --font-clash-display: "ClashDisplay", sans-serif;
+  --font-dm-mono: var(--font-dm-mono), monospace;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+@font-face {
+  font-family: 'ClashDisplay';
+  src: url('../../public/fonts/ClashDisplay-Variable.woff2') format('woff2');
+  font-weight: 200 700;
+  font-display: swap;
+  font-style: normal;
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
-}
