@@ -1,10 +1,20 @@
+// "use client";
 
 import Image from "next/image";
+import Button from "@/components/atoms/button";
+import Spline from '@splinetool/react-spline/next';
 
 export default function Home() {
+
+  // const clickTest = (textTest) => {
+  //   alert(textTest);
+  // }
+
   return (
-    <main className="flex flex-1 w-full flex-col items-center justify-between py-32 px-16 bg-neutral-950">
-      <h1 className="text-red-600 text-5xl">walahh</h1>
+    <main className="flex flex-1 w-full flex-col items-center justify-between bg-neutral-950">
+      <Spline
+        scene="/spline/scene.splinecode" 
+      />
     </main>
   );
 }
