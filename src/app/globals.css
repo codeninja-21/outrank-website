@@ -47,3 +47,92 @@
   font-style: normal;
 }
 
+
+
+.display-lg {
+  font-family: 'ClashDisplay';
+  font-size: 120px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1em;
+}
+
+.heading-1 {
+  font-family: 'ClashDisplay';
+  font-size: 96px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1em;
+}
+
+.heading-2 {
+  font-family: 'ClashDisplay';
+  font-size: 84px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1em;
+}
+
+.heading-3 {
+  font-family: 'ClashDisplay';
+  font-size: 52px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1em;
+}
+
+.heading-4 {
+  font-family: 'ClashDisplay';
+  font-size: 44px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1em;
+}
+
+.heading-5 {
+  font-family: 'ClashDisplay';
+  font-size: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1em;
+}
+
+.heading-6 {
+  font-family: 'ClashDisplay';
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1em;
+}
+
+.body-lg {
+  font-family: '--font-dm-mono', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 1em;
+}
+
+.body-md {
+  font-family: '--font-dm-mono';
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 1em;
+}
+
+.body-sm {
+  font-family: '--font-dm-mono';
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 1em;
+}
+
+.body-xsm {
+  font-family: '--font-dm-mono';
+  font-size: 12px;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 1em;
+}

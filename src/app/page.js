@@ -2,7 +2,8 @@
 
 import Image from "next/image";
 import Button from "@/components/atoms/button";
-import Spline from '@splinetool/react-spline/next';
+import Hero from "@/components/organisms/hero";
+
 
 export default function Home() {
 
@@ -12,9 +13,7 @@ export default function Home() {
 
   return (
     <main className="flex flex-1 w-full flex-col items-center justify-between bg-neutral-950">
-      <Spline
-        scene="/spline/scene.splinecode" 
-      />
+      <Hero></Hero>
     </main>
   );
 }
