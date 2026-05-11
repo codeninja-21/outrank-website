@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Button from "@/components/atoms/button";
-import Hero from "@/components/organisms/hero";
+import Landing from "@/components/pages/landing";
 
 
 export default function Home() {
@@ -12,8 +12,6 @@ export default function Home() {
   // }
 
   return (
-    <main className="flex flex-1 w-full flex-col items-center justify-between bg-neutral-950">
-      <Hero></Hero>
-    </main>
+    <Landing/>
   );
 }
