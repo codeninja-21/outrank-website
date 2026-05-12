@@ -2,7 +2,7 @@ import { FaceTop, FaceBottom, FaceFront, FaceBack, FaceRight, FaceLeft } from ".
 
 export default function Cube() {
     return (
-        <div className="relative size-87.5 transform-3d rotate-x-20 rotate-y-20">
+        <div className="relative size-87.5 transform-3d -rotate-x-35 rotate-y-45 hover:-rotate-y-45 transition duration-500 ease-in-out">
             <FaceTop/>
             <FaceBottom/>
             <FaceFront/>
