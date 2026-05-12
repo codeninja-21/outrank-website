@@ -2,6 +2,7 @@ import Hero from "../organisms/hero";
 import About from "../organisms/about";
 import Offering from "../organisms/offering";
 import Benefits from "../organisms/benefits";
+import Testimonials from "../organisms/testimonials";
 
 export default function Landing() {
     return (
@@ -9,7 +10,8 @@ export default function Landing() {
             {/* <Hero/> */}
             {/* <About/> */}
             {/* <Offering/> */}
-            <Benefits/>
+            {/* <Benefits/> */}
+            <Testimonials/>
         </main>
     );
 }
