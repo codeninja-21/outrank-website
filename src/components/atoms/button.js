@@ -13,7 +13,7 @@ export default function Button({children, onClick, variant = "primary"}) {
         >
             {children}
             <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M8.38462 3L13 8L8.38462 13M12.359 8H3" stroke="currentColor" strokeMiterlimit="10" stroke-linecap="square"/>
+                <path d="M8.38462 3L13 8L8.38462 13M12.359 8H3" stroke="currentColor" strokeMiterlimit="10" strokeLinecap="square"/>
             </svg>
         </button>
     );

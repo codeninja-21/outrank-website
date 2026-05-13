@@ -7,10 +7,10 @@ import Testimonials from "../organisms/testimonials";
 export default function Landing() {
     return (
         <main className="flex flex-1 w-full flex-col items-center justify-between bg-neutral-950">
-            {/* <Hero/> */}
-            {/* <About/> */}
-            {/* <Offering/> */}
-            {/* <Benefits/> */}
+            <Hero/>
+            <About/>
+            <Offering/>
+            <Benefits/>
             <Testimonials/>
         </main>
     );
