@@ -4,6 +4,7 @@ import Offering from "../organisms/offering";
 import Benefits from "../organisms/benefits";
 import Testimonials from "../organisms/testimonials";
 import Pricing from "../organisms/pricing";
+import Process from "../organisms/process";
 
 export default function Landing() {
     return (
@@ -13,7 +14,8 @@ export default function Landing() {
             <Offering/>
             <Benefits/>
             {/* <Testimonials/> */}
-            <Pricing/> 
+            <Pricing/>
+            <Process/> 
         </main>
     );
 }
