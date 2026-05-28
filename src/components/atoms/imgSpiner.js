@@ -7,7 +7,8 @@ export default function ImageSpiner({source}) {
             alt="Spiner Image"
             width={232}
             height={128}
-            className="skew-12"
+            priority
+            className="skew-12 h-auto w-auto"
         />
     );
 }
