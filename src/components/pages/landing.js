@@ -6,6 +6,7 @@ import Testimonials from "../organisms/testimonials";
 import Pricing from "../organisms/pricing";
 import Process from "../organisms/process";
 import Cta from "../organisms/cta";
+import Footer from "../organisms/footer";
 
 export default function Landing() {
     return (
@@ -18,6 +19,7 @@ export default function Landing() {
             <Pricing/>
             <Process/>
             <Cta/>
+            <Footer/>
         </main>
     );
 }
