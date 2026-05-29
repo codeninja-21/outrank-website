@@ -1,4 +1,3 @@
-import { FaceBottom } from "../atoms/faceCube";
 import CtaButton from "../molecules/ctaButton";
 import CtaPanel from "../molecules/ctaPanel";
 
