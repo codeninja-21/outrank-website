@@ -106,7 +106,7 @@
 }
 
 .body-lg {
-  font-family: '--font-dm-mono', sans-serif;
+  font-family: var(--font-dm-mono), monospace;
   font-size: 18px;
   font-weight: 400;
   text-transform: uppercase;
@@ -114,7 +114,7 @@
 }
 
 .body-md {
-  font-family: '--font-dm-mono', sans-serif;
+  font-family: var(--font-dm-mono), monospace;
   font-size: 16px;
   font-weight: 400;
   text-transform: uppercase;
@@ -122,7 +122,7 @@
 }
 
 .body-sm {
-  font-family: '--font-dm-mono', sans-serif;
+  font-family: var(--font-dm-mono), monospace;
   font-size: 14px;
   font-weight: 400;
   text-transform: uppercase;
@@ -130,7 +130,7 @@
 }
 
 .body-xsm {
-  font-family: '--font-dm-mono', sans-serif;
+  font-family: var(--font-dm-mono), monospace;
   font-size: 12px;
   font-weight: 400;
   text-transform: uppercase;
