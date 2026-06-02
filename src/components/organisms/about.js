@@ -11,7 +11,9 @@ export default function About() {
                         <p className="body-md text-neutral-400">Here, you are not just another member you are part of a fitness journey where your effort truly matters.</p>
                     </div>
                 </div>
-                <SpinerCard/>
+                <div className="w-full h-full flex items-center justify-center relative">
+                    <SpinerCard />
+                </div>
             </div>
         </section>
     );
