@@ -5,7 +5,7 @@ import ImageSpiner from "../atoms/imgSpiner";
 
 export default function SpinerCard() {
 
-    const [isHovered, setIsHovered] = useState(false)
+    const [isHovered, setIsHovered] = useState(null)
 
     const dataImage = [
         {
@@ -50,8 +50,8 @@ export default function SpinerCard() {
                     return (
                         <div
                             key={image.id}
-                            onMouseEnter={() => setIsHovered(true)}
-                            onMouseLeave={() => setIsHovered(false)}
+                            onMouseEnter={() => setIsHovered(image.id)}
+                            onMouseLeave={() => setIsHovered(null)}
                             className="absolute w-58 h-32 -translate-x-1/2 -translate-y-1/2 origin-center transition-all duration-300"
                             style={{
                                 transform: `
@@ -65,7 +65,7 @@ export default function SpinerCard() {
                                 style={{
                                     transform: `
                                         rotate(-40deg)
-                                        ${isHovered ? 'skewX(0deg)' : 'skewX(-32deg)'}
+                                        ${isHovered === image.id ? 'skewX(-5deg)' : 'skewX(-32deg)'}
                                     `
                                 }}
                             >
