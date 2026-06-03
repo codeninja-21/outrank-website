@@ -4,33 +4,42 @@ export default function Pricing() {
     const data = [
         {
             id: 1,
-            title: "odading",
-            price: "99",
-            periodType: "year",
+            title: "Online Training",
+            price: "39",
+            periodType: "Month",
             lists: [
-                "list pertama",
-                "list kedua",
+                "Community access",
+                "Progress tracking dashboard",
+                "Structured home programs",
+                "On-demand training library",
+                "Live virtual workout sessions",
             ]
         },
         {
             id: 2,
-            title: "mangole",
-            price: "49",
-            periodType: "month",
+            title: "HYBIRD TRAINING",
+            price: "79",
+            periodType: "Month",
             lists: [
-                "list ketiga",
-                "list keempat",
+                "All Online Training features",
+                "Offline group classes",
+                "Gym facility access",
+                "Guided training sessions",
+                "Monthly performance review",
             ]
         },
         {
             id: 3,
-            title: "uenakk",
-            price: "39",
-            periodType: "week",
+            title: "FULL COACHING",
+            price: "139",
+            periodType: "Month",
             lists: [
-                "list kelima",
-                "list keenam",
-                "list ketujuh",
+                "Full Online + Offline access",
+                "Personal coaching (1-on-1)",
+                "Customized fitness plan",
+                "Nutrition & recovery guidance",
+                "Weekly progress monitoring",
+                "Priority booking",
             ]
         },
     ]
