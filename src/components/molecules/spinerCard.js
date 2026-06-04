@@ -1,6 +1,6 @@
 "use client"; 
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import ImageSpiner from "../atoms/imgSpiner";
 
 export default function SpinerCard() {
@@ -39,8 +39,30 @@ export default function SpinerCard() {
     ]
 
     const totalImage = dataImage.length;
-    const isMobile = window.innerWidth < 640;
-    const isTablet = window.innerWidth > 640 && window.innerWidth < 1024;
+
+    const [screenSize, setScreenSize] = useState({
+        isMobile: false,
+        isTablet: false,
+    });
+
+    useEffect(() => {
+        const handleResponsive = () => {
+            const width = window.innerWidth;
+            setScreenSize({
+                isMobile: width < 640,
+                isTablet: width >= 640 && width < 1024,
+            });
+        }
+        handleResponsive();
+
+        window.addEventListener('resize', handleResponsive);
+
+        return () => window.removeEventListener('resize', handleResponsive);
+    }, []);
+
+
+
+    const { isMobile, isTablet } = screenSize
     const radius = isMobile ? 140 : isTablet ? 200 : 280;
 
     return (
