@@ -10,7 +10,7 @@ export default function PricingCard({title, price, periodType, lists}) {
     )
 
     return (
-        <div className="w-full h-full flex flex-col justify-between">
+        <div className="w-full h-full flex flex-col justify-between max-lg:h-[90vh]">
             <div className="flex flex-col gap-10">
                 <div className="w-full h-40 px-1.5 bg-red-500">
                     <h3 className="heading-3">{title}</h3>
@@ -22,7 +22,7 @@ export default function PricingCard({title, price, periodType, lists}) {
 
             <div className="flex items-end justify-end">
                 <h2 className="display-lg text-red-500">${price}</h2>
-                <p className="body-md text-neutral-400 mb-5">/{periodType}</p>
+                <p className="body-md text-neutral-400 mb-5 max-lg:mb-0">/{periodType}</p>
             </div>
         </div>
     );

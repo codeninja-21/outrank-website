@@ -20,8 +20,8 @@ export default function ProcessCard({num, title, description, position}) {
     }
 
     return (
-        <div className={`w-1/4 h-100 bg-neutral-300 ${style[position].wrapper}`}>
-            <div className={`px-8 flex flex-col gap-5 ${style[position].content}`}>
+        <div className={`w-1/4 h-100 bg-neutral-300 ${style[position].wrapper} max-lg:mt-0 max-lg:w-full max-lg:h-50`}>
+            <div className={`px-8 flex flex-col gap-5 ${style[position].content} max-lg:mt-15 max-lg:ml-15`}>
                 <h6 className="heading-6 text-red-500">{num}</h6>
                 <div className="flex flex-col gap-3">
                     <h3 className="heading-3 text-red-500">{title}</h3>

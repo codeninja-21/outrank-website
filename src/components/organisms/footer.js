@@ -5,7 +5,7 @@ export default function Footer() {
                 <div className="w-full h-[35vh] bg-linear-to-t from-neutral-950/90 to-neutral-950/0">
                 </div>
 
-                <div className="relative w-full h-[65vh] pt-12 pb-8 bg-red-600 flex flex-col items-center justify-between">
+                <div className="relative w-full h-[65vh] pt-12 pb-8 bg-red-600 flex flex-col items-center justify-between max-md:min-h-150 max-sm:pb-25">
                     
                     <div className="flex flex-col items-center gap-6">
                         <h2 className="display-lg text-neutral-100">OUTRANK®</h2>
@@ -15,7 +15,7 @@ export default function Footer() {
                         </div>
                     </div>
 
-                    <div className="flex flex-col items-center gap-16">
+                    <div className="flex flex-col items-center gap-16 max-sm:gap-8">
                         <div className="flex flex-col items-center gap-4">
                             <p className="body-sm text-neutral-100">Adress</p>
                             <div className="flex flex-col items-center gap-1">
@@ -45,14 +45,14 @@ export default function Footer() {
                         </div>
                     </div>
 
-                    <div className="flex flex-row items-center gap-6">
+                    <div className="flex flex-row items-center gap-6 max-sm:flex-col">
                         <a href="" className="body-xsm text-neutral-100">License</a>
                         <a href="" className="body-xsm text-neutral-100">Style Guide</a>
                         <a href="" className="body-xsm text-neutral-100">404</a>
                         <a href="" className="body-xsm text-neutral-100">ChangeLog</a>
                     </div>
 
-                    <div className="absolute bottom-8 right-8">
+                    <div className="absolute bottom-8 right-8 max-sm:w-full max-sm:flex max-sm:justify-center max-sm:right-0">
                         <p className="body-xsm text-neutral-100">Designed By 8AM Design</p>
                     </div>
 

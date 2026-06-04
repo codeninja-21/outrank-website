@@ -39,7 +39,9 @@ export default function SpinerCard() {
     ]
 
     const totalImage = dataImage.length;
-    const radius = 280; 
+    const isMobile = window.innerWidth < 640;
+    const isTablet = window.innerWidth > 640 && window.innerWidth < 1024;
+    const radius = isMobile ? 140 : isTablet ? 200 : 280;
 
     return (
         <div className="w-full h-full mx-auto flex flex-col justify-center items-center">
@@ -52,7 +54,7 @@ export default function SpinerCard() {
                             key={image.id}
                             onMouseEnter={() => setIsHovered(image.id)}
                             onMouseLeave={() => setIsHovered(null)}
-                            className="absolute w-58 h-32 -translate-x-1/2 -translate-y-1/2 origin-center transition-all duration-300"
+                            className="absolute w-58 h-32 -translate-x-1/2 -translate-y-1/2 origin-center transition-all duration-300 max-lg:w-44 max-lg:h-24 max-sm:w-32 max-sm:h-20"
                             style={{
                                 transform: `
                                     rotate(${angle}deg) 

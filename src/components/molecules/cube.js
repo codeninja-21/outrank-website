@@ -10,8 +10,8 @@ export default function Cube({title, description, source, position, num}) {
     }
 
     return (
-        <div className={`relative ${positions[position]}`}>
-            <div className="relative size-87.5 transform-3d -rotate-x-35 rotate-y-45 hover:-rotate-y-45 transition duration-500 ease-in-out">
+        <div className={`relative ${positions[position]} max-sm:my-5`}>
+            <div className="relative size-87.5 transform-3d -rotate-x-35 rotate-y-45 hover:-rotate-y-45 transition duration-500 ease-in-out max-sm:rotate-x-0 max-sm:rotate-y-0">
                 <FaceTop num={num}/>
                 <FaceBottom/>
                 <FaceFront title={title} description={description} />

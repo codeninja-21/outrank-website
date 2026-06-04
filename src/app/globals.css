@@ -136,3 +136,119 @@
   text-transform: uppercase;
   line-height: 1em;
 }
+
+@media (max-width: 1024px) {
+  .display-lg {
+    font-family: 'ClashDisplay';
+    font-size: 106px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1em;
+  }
+
+  .heading-1 {
+    font-family: 'ClashDisplay';
+    font-size: 88px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1em;
+  }
+
+  .heading-2 {
+    font-family: 'ClashDisplay';
+    font-size: 72px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1em;
+  }
+
+  .heading-3 {
+    font-family: 'ClashDisplay';
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1em;
+  }
+
+  .heading-4 {
+    font-family: 'ClashDisplay';
+    font-size: 32px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1em;
+  }
+
+  .heading-5 {
+    font-family: 'ClashDisplay';
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1em;
+  }
+
+  .heading-6 {
+    font-family: 'ClashDisplay';
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1em;
+  }
+}
+
+@media (max-width: 768px) {
+  .display-lg {
+    font-family: 'ClashDisplay';
+    font-size: 42px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1em;
+  }
+
+  .heading-1 {
+    font-family: 'ClashDisplay';
+    font-size: 48px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1em;
+  }
+
+  .heading-2 {
+    font-family: 'ClashDisplay';
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1em;
+  }
+
+  .heading-3 {
+    font-family: 'ClashDisplay';
+    font-size: 28px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1em;
+  }
+
+  .heading-4 {
+    font-family: 'ClashDisplay';
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1em;
+  }
+
+  .heading-5 {
+    font-family: 'ClashDisplay';
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1em;
+  }
+
+  .heading-6 {
+    font-family: 'ClashDisplay';
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1em;
+  }
+}

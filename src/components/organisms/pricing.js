@@ -55,10 +55,10 @@ export default function Pricing() {
     })
 
     return (
-        <section className="w-full h-screen py-10 overflow-hidden">
+        <section className="w-full h-screen pt-10 overflow-hidden max-lg:h-auto max-lg:pb-10">
             <div className="w-full h-full px-8 flex flex-col gap-3">
                 <p className="body-lg text-neutral-100">PRICING PLAN</p>
-                <div className="w-full h-full flex gap-5 shrink">
+                <div className="w-full h-full flex gap-5 shrink max-lg:flex-col max-lg:gap-8">
                     {listMap}
                 </div>
             </div>
