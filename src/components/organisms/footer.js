@@ -1,4 +1,9 @@
-export default function Footer() {
+import getFooter from "@/services/footer.service";
+
+export default async function Footer() {
+
+    const dataSupabase = await getFooter();
+
     return (
         <section className="w-full h-screen">
             <div className="w-full h-full">
@@ -8,19 +13,19 @@ export default function Footer() {
                 <div className="relative w-full h-[65vh] pt-12 pb-8 bg-red-600 flex flex-col items-center justify-between max-md:min-h-150 max-sm:pb-25">
                     
                     <div className="flex flex-col items-center gap-6">
-                        <h2 className="display-lg text-neutral-100">OUTRANK®</h2>
+                        <h2 className="display-lg text-neutral-100">{dataSupabase[0].title}</h2>
                         <div className="flex flex-col items-center gap-2">
-                            <h6 className="heading-6 text-neutral-100">FITNESS COACH</h6>
-                            <p className="body-sm text-neutral-100">© Outrank 2025. ALL RIGHTS RESERVED </p>
+                            <h6 className="heading-6 text-neutral-100">{dataSupabase[0].sub_title}</h6>
+                            <p className="body-sm text-neutral-100">{dataSupabase[0].copyright}</p>
                         </div>
                     </div>
 
                     <div className="flex flex-col items-center gap-16 max-sm:gap-8">
                         <div className="flex flex-col items-center gap-4">
-                            <p className="body-sm text-neutral-100">Adress</p>
+                            <p className="body-sm text-neutral-100">{dataSupabase[0].address_title}</p>
                             <div className="flex flex-col items-center gap-1">
-                                <p className="body-md text-neutral-100">Lesanpuro 5 Ville, 7283</p>
-                                <p className="body-md text-neutral-100">New York City</p>
+                                <p className="body-md text-neutral-100">{dataSupabase[0].address}</p>
+                                <p className="body-md text-neutral-100">{dataSupabase[0].address_city}</p>
                             </div>
                         </div>
                         <div className="flex flex-row items-center gap-8">
@@ -46,14 +51,14 @@ export default function Footer() {
                     </div>
 
                     <div className="flex flex-row items-center gap-6 max-sm:flex-col">
-                        <a href="" className="body-xsm text-neutral-100">License</a>
-                        <a href="" className="body-xsm text-neutral-100">Style Guide</a>
-                        <a href="" className="body-xsm text-neutral-100">404</a>
-                        <a href="" className="body-xsm text-neutral-100">ChangeLog</a>
+                        <a href="" className="body-xsm text-neutral-100">{dataSupabase[0].license_text}</a>
+                        <a href="" className="body-xsm text-neutral-100">{dataSupabase[0].style_guide_text}</a>
+                        <a href="" className="body-xsm text-neutral-100">{dataSupabase[0].not_found_text}</a>
+                        <a href="" className="body-xsm text-neutral-100">{dataSupabase[0].changelog_text}</a>
                     </div>
 
                     <div className="absolute bottom-8 right-8 max-sm:w-full max-sm:flex max-sm:justify-center max-sm:right-0">
-                        <p className="body-xsm text-neutral-100">Designed By 8AM Design</p>
+                        <p className="body-xsm text-neutral-100">{dataSupabase[0].design_by}</p>
                     </div>
 
                 </div>

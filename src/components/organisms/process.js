@@ -1,38 +1,14 @@
+import getProcess from "@/services/process.service";
 import ProcessCard from "../molecules/processCard";
 
-export default function Process() {
+export default async function Process() {
     
-    const data = [
-        {
-            id: 1,
-            title: "ASSES",
-            description: "Review goals and current fitness level.",
-            position: "first",
-        },
-        {
-            id: 2,
-            title: "PLAN",
-            description: "Create a structured training program.",
-            position: "second",
-        },
-        {
-            id: 3,
-            title: "TRAINING",
-            description: "Execute workouts online or offline.",
-            position: "third",
-        },
-        {
-            id: 4,
-            title: "IMPROVE",
-            description: "Track progress and refine results.",
-            position: "fourth",
-        },
-    ]
+    const dataSupabase = await getProcess();
 
-    const dataMap = data.map((items) => {
+    const dataMap = dataSupabase.map((items, index) => {
         return <ProcessCard
-            key={items.id}
-            num={String(items.id)}
+            key={index}
+            num={String(index + 1)}
             title={items.title}
             description={items.description}
             position={items.position}

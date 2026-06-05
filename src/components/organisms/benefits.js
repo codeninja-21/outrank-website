@@ -1,33 +1,13 @@
+import getBenefits from "@/services/benefit.service";
 import BenefitsCard from "../molecules/benefitsCard";
 
-export default function Benefits() {
+export default async function Benefits() {
 
-    const data = [
-        {
-            id: 1,
-            title: "Balanced Conditioning",
-            description: "A mix of strength, mobility, and endurance training designed to keep the body resilient and adaptable.",
-        },
-        {
-            id: 2,
-            title: "Sustainable Progress",
-            description: "Training systems built for consistency, recovery, and results that last beyond short-term motivation.",
-        },
-        {
-            id: 3,
-            title: "Sustainable Strength",
-            description: "Build functional strength that supports daily movement, training consistency, and long-term progress.",
-        },
-        {
-            id: 4,
-            title: "Guided Training",
-            description: "Structured programs led by experienced trainers to ensure safe form, focus, and measurable improvement.",
-        },
-    ]
+    const dataSupabase = await getBenefits();
 
-    const dataMap = data.map((items) => {
+    const dataMap = dataSupabase.cards.map((items, index) => {
         return <BenefitsCard
-            key={items.id}
+            key={index}
             title={items.title}
             description={items.description}
         />
@@ -38,7 +18,7 @@ export default function Benefits() {
             <div className="w-full h-full">
                 <div className="w-full h-full px-8 flex flex-col justify-center gap-16">
                     <div className="">
-                        <h2 className="display-lg text-red-500">THE BENEFITS</h2>
+                        <h2 className="display-lg text-red-500">{dataSupabase.title}</h2>
                     </div>
                     <div className="flex flex-row gap-14 max-lg:flex-col">
                         {dataMap}

@@ -3,38 +3,38 @@
 import { useState, useEffect } from "react";
 import ImageSpiner from "../atoms/imgSpiner";
 
-export default function SpinerCard() {
+export default function SpinerCard({ data }) {
 
     const [isHovered, setIsHovered] = useState(null)
 
     const dataImage = [
         {
             id: 1,
-            source: "/image/About Card 1.png",
+            source: data[0].image_first,
         },
         {
             id: 2,
-            source: "/image/About Card 2.png",
+            source: data[0].image_second,
         },
         {
             id: 3,
-            source: "/image/About Card 3.png",
+            source: data[0].image_third,
         },
         {
             id: 4,
-            source: "/image/About Card 4.png",
+            source: data[0].image_fourth,
         },
         {
             id: 5,
-            source: "/image/About Card 5.png",
+            source: data[0].image_fifth,
         },
         {
             id: 6,
-            source: "/image/About Card 6.png",
+            source: data[0].image_sixth,
         },
         {
             id: 7,
-            source: "/image/About Card 7.png",
+            source: data[0].image_seventh,
         },
     ]
 

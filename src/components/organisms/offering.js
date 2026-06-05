@@ -1,34 +1,37 @@
+import getOffering from "@/services/offering.service";
 import Cube from "../molecules/cube";
 
-export default function Offering() {
+export default async function Offering() {
+
+    const dataSupabase = await getOffering();
 
     const data = [
         {
-            id: 1,
-            title: "Strength",
-            description: "Build muscle, improve power, and train with structured movements.",
-            src: "/image/Cube1.png",
+            id: dataSupabase[0].id,
+            title: dataSupabase[0].title,
+            description: dataSupabase[0].description,
+            src: dataSupabase[0].source,
             position: "first",
         },
         {
-            id: 2,
-            title: "CARDIO",
-            description: "Improve flexibility, joint health, and movement control.",
-            src: "/image/Cube2.png",
+            id: dataSupabase[1].id,
+            title: dataSupabase[1].title,
+            description: dataSupabase[1].description,
+            src: dataSupabase[1].source,
             position: "second",
         },
         {
-            id: 3,
-            title: "MOBILITY",
-            description: "Improve flexibility, joint health, and movement control.",
-            src: "/image/Cube3.png",
+            id: dataSupabase[2].id,
+            title: dataSupabase[2].title,
+            description: dataSupabase[2].description,
+            src: dataSupabase[2].source,
             position: "third",
         },
         {
-            id: 4,
-            title: "RECOVERY",
-            description: "Support muscle repair and restore balance after training.",
-            src: "/image/Cube4.png",
+            id: dataSupabase[3].id,
+            title: dataSupabase[3].title,
+            description: dataSupabase[3].description,
+            src: dataSupabase[3].source,
             position: "fourth",
         },
     ]

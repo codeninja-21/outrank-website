@@ -1,55 +1,16 @@
+import getPricing from "@/services/pricing.service";
 import PricingCard from "../molecules/pricingCard";
 
-export default function Pricing() {
-    const data = [
-        {
-            id: 1,
-            title: "Online Training",
-            price: "39",
-            periodType: "Month",
-            lists: [
-                "Community access",
-                "Progress tracking dashboard",
-                "Structured home programs",
-                "On-demand training library",
-                "Live virtual workout sessions",
-            ]
-        },
-        {
-            id: 2,
-            title: "HYBIRD TRAINING",
-            price: "79",
-            periodType: "Month",
-            lists: [
-                "All Online Training features",
-                "Offline group classes",
-                "Gym facility access",
-                "Guided training sessions",
-                "Monthly performance review",
-            ]
-        },
-        {
-            id: 3,
-            title: "FULL COACHING",
-            price: "139",
-            periodType: "Month",
-            lists: [
-                "Full Online + Offline access",
-                "Personal coaching (1-on-1)",
-                "Customized fitness plan",
-                "Nutrition & recovery guidance",
-                "Weekly progress monitoring",
-                "Priority booking",
-            ]
-        },
-    ]
+export default async function Pricing() {
 
-    const listMap = data.map((items) => {
+    const dataSupabase = await getPricing();
+
+    const listMap = dataSupabase.map((items, index) => {
         return <PricingCard
-            key={items.id}
+            key={index}
             title={items.title}
             price={items.price}
-            periodType={items.periodType}
+            periodType={items.period}
             lists={items.lists}
         />
     })

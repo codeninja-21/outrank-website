@@ -1,6 +1,10 @@
+import getAbout from "@/services/about.service";
 import SpinerCard from "../molecules/spinerCard";
 
-export default function About() {
+export default async function About() {
+
+    const dataSupabase = await getAbout();
+
     return (
         <section className="relative w-full h-screen">
             <div className="w-full h-full px-8 flex flex-row max-lg:flex-col-reverse max-lg:items-center">
@@ -12,7 +16,7 @@ export default function About() {
                     </div>
                 </div>
                 <div className="w-full h-full flex items-center justify-center relative">
-                    <SpinerCard />
+                    <SpinerCard data={dataSupabase} />
                 </div>
             </div>
         </section>
