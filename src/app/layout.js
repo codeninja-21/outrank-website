@@ -1,5 +1,7 @@
 import { DM_Mono } from "next/font/google";
 import "./globals.css";
+import { Analytics } from "@vercel/analytics/next"
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 const dmMono = DM_Mono({
   variable: "--font-dm-mono",
@@ -19,7 +21,11 @@ export default function RootLayout({ children }) {
       suppressHydrationWarning={true}
       className={`${dmMono.className} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col">
+        {children}
+        <Analytics/>
+        <SpeedInsights/>
+      </body>
     </html>
   );
 }
