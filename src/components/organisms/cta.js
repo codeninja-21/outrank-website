@@ -14,7 +14,7 @@ export default async function Cta() {
                 />
                 <div className="w-full flex flex-row items-center justify-around max-lg:gap-8 max-lg:justify-center">
                     <h2 className="heading-2 text-red-500">{dataSupabase[0].tagline_left}</h2>
-                    <CtaButton button_text={dataSupabase[0].button_text} />
+                    <CtaButton onClick={"/contact"} button_text={dataSupabase[0].button_text} />
                     <h2 className="heading-2 text-red-500">{dataSupabase[0].tagline_right}</h2>
                 </div>
                 <CtaPanel
