@@ -16,7 +16,7 @@ export default async function Process() {
     })
 
     return (
-        <section className="w-full h-screen max-lg:h-auto">
+        <section className="w-full h-screen max-lg:h-auto" id="process">
             <div className="relative w-full h-full flex items-center">
                 <div className="absolute w-full h-1 mb-45 bg-red-500 max-lg:h-full max-lg:w-1 max-xl:mb-0 max-xl:ml-12"></div>
                 <div className="w-full flex justify-between max-lg:flex-col">

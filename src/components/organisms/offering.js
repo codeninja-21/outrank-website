@@ -48,7 +48,7 @@ export default async function Offering() {
     })
 
     return (
-        <section className="w-full h-screen overflow-hidden max-sm:h-auto max-sm:py-10">
+        <section className="w-full h-screen overflow-hidden max-sm:h-auto max-sm:py-10" id="offering">
             <div className="w-full h-full flex justify-center items-center">
                 <div className="flex flex-row perspective-[1000px] max-sm:flex-col">
                     {cubeMap}
