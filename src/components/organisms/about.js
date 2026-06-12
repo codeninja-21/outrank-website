@@ -6,7 +6,7 @@ export default async function About() {
     const dataSupabase = await getAbout();
 
     return (
-        <section className="relative w-full h-screen">
+        <section className="relative w-full h-screen" id="about">
             <div className="w-full h-full px-8 flex flex-row max-lg:flex-col-reverse max-lg:items-center">
                 <div className="w-auto mt-16 max-lg:text-center">
                     <h2 className="heading-2 text-red-500">Welcome</h2>

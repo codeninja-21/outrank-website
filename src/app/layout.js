@@ -1,5 +1,6 @@
 import { DM_Mono } from "next/font/google";
 import "./globals.css";
+import Navbar from "@/components/organisms/navbar";
 import { Analytics } from "@vercel/analytics/next"
 import { SpeedInsights } from "@vercel/speed-insights/next"
 
@@ -19,9 +20,10 @@ export default function RootLayout({ children }) {
     <html
       lang="en"
       suppressHydrationWarning={true}
-      className={`${dmMono.className} h-full antialiased`}
+      className={`${dmMono.className} h-full antialiased scroll-smooth`}
     >
-      <body className="min-h-full flex flex-col">
+      <body className="min-h-full flex flex-col selection:bg-red-400 selection:text-neutral-100">
+        <Navbar/>
         {children}
         <Analytics/>
         <SpeedInsights/>
