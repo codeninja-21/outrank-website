@@ -10,6 +10,8 @@
     "email": "bunx react-email dev --dir src/emails"
   },
   "dependencies": {
+    "@react-email/components": "^1.0.12",
+    "@react-email/tailwind": "^2.0.7",
     "@splinetool/react-spline": "^4.1.0",
     "@supabase/ssr": "^0.10.3",
     "@supabase/supabase-js": "^2.107.0",
@@ -26,6 +28,7 @@
     "babel-plugin-react-compiler": "1.0.0",
     "eslint": "^9",
     "eslint-config-next": "16.2.3",
+    "react-email": "^6.6.0",
     "tailwindcss": "^4"
   }
 }
