@@ -9,9 +9,7 @@ import { InertiaPlugin } from "gsap/InertiaPlugin";
 
 gsap.registerPlugin(Draggable, InertiaPlugin);
 
-export default function Testimonials() {
-    const container = useRef(null);
-    
+function animationGsap(container) {
     useGSAP(() => {
         let mm = gsap.matchMedia();
 
@@ -57,6 +55,12 @@ export default function Testimonials() {
         };
 
     }, { scope: container, dependencies: [] });
+}
+
+export default function Testimonials() {
+    const container = useRef(null);
+
+    animationGsap(container)
 
     const data = [
         {

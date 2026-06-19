@@ -9,7 +9,7 @@ export default function TestimonialCard({ name, message, photo, position = "firs
     }
 
     return (
-        <div className={`lg:absolute flex flex-col items-start gap-3 group transition-all ease-linear card ${positions[position]}`}>
+        <div className={`lg:absolute flex flex-col items-start gap-3 group transition-all ease-linear card will-change-transform ${positions[position]}`}>
             <div className="px-2 py-1 bg-neutral-950/40 rounded-xs">
                 <p className="body-xsm text-neutral-100/20 lg:group-hover:text-neutral-100 transition-all ease-in-out max-lg:text-neutral-100">{name}</p>
             </div>
