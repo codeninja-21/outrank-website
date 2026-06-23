@@ -7,7 +7,7 @@ import { useGSAP } from "@gsap/react";
 import { Draggable } from "gsap/Draggable";
 import { InertiaPlugin } from "gsap/InertiaPlugin";
 
-gsap.registerPlugin(Draggable, InertiaPlugin);
+gsap.registerPlugin(Draggable, InertiaPlugin, useGSAP);
 
 function animationGsap(container) {
     useGSAP(() => {
