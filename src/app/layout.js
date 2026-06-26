@@ -2,8 +2,9 @@ import { DM_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/organisms/navbar";
 import LenisScroll from "@/components/scroll/lenis";
-import { Analytics } from "@vercel/analytics/next"
-import { SpeedInsights } from "@vercel/speed-insights/next"
+import TransitionProvider from "./profiders/transitionProvider";
+// import { Analytics } from "@vercel/analytics/next";
+// import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const dmMono = DM_Mono({
   variable: "--font-dm-mono",
@@ -23,12 +24,14 @@ export default function RootLayout({ children }) {
       suppressHydrationWarning={true}
       className={`${dmMono.className} h-full antialiased scroll-smooth`}
     >
-      <body className="min-h-full flex flex-col selection:bg-red-400 selection:text-neutral-100">
-        <LenisScroll/>
-        <Navbar/>
-        {children}
-        <Analytics/>
-        <SpeedInsights/>
+      <body className="min-h-full flex flex-col">
+        <TransitionProvider>
+          <LenisScroll/>
+          <Navbar/>
+          {children}
+          {/* <Analytics/>
+          <SpeedInsights/> */}
+        </TransitionProvider>
       </body>
     </html>
   );

@@ -1,16 +1,9 @@
 "use client";
 
 import Form from "@/components/molecules/contact/form";
-import { useRouter } from "next/navigation";
+import Link from "next/link";
 
 export default function ContactSection() {
-
-    const router = useRouter()
-
-    const handleClick = () => {
-        router.push("/")
-    }
-
     return (
         <section className="w-full h-screen">
             <div className="w-full h-full flex flex-col">
@@ -30,9 +23,11 @@ export default function ContactSection() {
                                 <p className="body-xsm text-neutral-600">© Outrank 2025. ALL RIGHTS RESERVED</p>
                             </div>
                         </div>
-                        <svg onClick={handleClick} width="109" height="109" viewBox="0 0 109 109" fill="none" xmlns="http://www.w3.org/2000/svg" className="ml-auto cursor-pointer">
-                            <path d="M14.1421 10H98.9947V94.8526M93.1021 15.8926L14.1421 94.8526" stroke="#E50709" strokeWidth="20" strokeMiterlimit="10" strokeLinecap="square"/>
-                        </svg>
+                        <Link href="/">
+                            <svg width="109" height="109" viewBox="0 0 109 109" fill="none" xmlns="http://www.w3.org/2000/svg" className="ml-auto cursor-pointer">
+                                <path d="M14.1421 10H98.9947V94.8526M93.1021 15.8926L14.1421 94.8526" stroke="#E50709" strokeWidth="20" strokeMiterlimit="10" strokeLinecap="square"/>
+                            </svg>
+                        </Link>
                     </div>
                     <div className="w-full mt-15 flex flex-col justify-center items-center gap-21">
                         <Form/>
